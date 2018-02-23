@@ -51,7 +51,7 @@ class l1_logistic:
 		"""
 			利用one versus one或one versus rest训练多类l1 logistic。
 			参数：
-				①one_versus_one：bool，当one_versus_one为True，则使用one versus one训练多类SVM，否则使用one versus rest训练
+				①one_versus_one：bool，当one_versus_one为True，则使用one versus one训练多类logistic，否则使用one versus rest训练
 				②n_class：int，表示类别的数量
 				其余参数与train方法相同
 		"""
