@@ -32,7 +32,7 @@ class l1_logistic:
 	
 	def train(self,X,y,C=1,w=None,sample_weights=None,sparse=False,conv_tol=1e-6,max_iter=100):
 		"""
-			训练算法求解解向量w，其使得目标函数f(w) = loss(w) + 0.5*lambda_*||w||^2最小
+			训练算法求解解向量w，其使得目标函数f(w) = C*loss(w) + ||w||最小，其中||*||表示1-范数
 			参数：
 				①X,y：训练集。y取值范围必须为{-1,1}
 				②w：1D array或None，表示初始解向量。若w为None，则其为全为0的向量
